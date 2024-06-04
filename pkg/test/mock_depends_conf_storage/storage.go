@@ -9,7 +9,7 @@ import (
 
 	gomock "github.com/golang/mock/gomock"
 
-	storage "github.com/machinefi/w3bstream/pkg/depends/conf/storage"
+	storage "github.com/ioCarb/w3bstream/pkg/depends/conf/storage"
 )
 
 // MockStorageOperations is a mock of StorageOperations interface.

@@ -1,4 +1,4 @@
-module github.com/machinefi/w3bstream
+module github.com/ioCarb/w3bstream
 
 go 1.18
 

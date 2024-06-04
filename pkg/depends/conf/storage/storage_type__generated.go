@@ -78,7 +78,7 @@ func (v StorageType) Label() string {
 }
 
 func (v StorageType) TypeName() string {
-	return "github.com/machinefi/w3bstream/pkg/depends/conf/storage.StorageType"
+	return "github.com/ioCarb/w3bstream/pkg/depends/conf/storage.StorageType"
 }
 
 func (v StorageType) ConstValues() []enum.IntStringerEnum {

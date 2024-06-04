@@ -21,7 +21,7 @@ import (
 
 	"github.com/machinefi/w3bstream/pkg/depends/base/consts"
 	"github.com/machinefi/w3bstream/pkg/depends/base/types"
-	"github.com/machinefi/w3bstream/pkg/depends/conf/storage"
+	"github.com/ioCarb/w3bstream/pkg/depends/conf/storage"
 	mock_conf_storage "github.com/machinefi/w3bstream/pkg/test/mock_depends_conf_storage"
 )
 
