@@ -3,6 +3,7 @@ package storage
 import (
 	"os"
 	"path/filepath"
+	"strconv"
 
 	"github.com/pkg/errors"
 	"github.com/shirou/gopsutil/v3/disk"
@@ -78,6 +79,14 @@ func (s *Storage) Init() error {
 	// overwrite default 'TMPDIR'
 	if err := os.Setenv("TMPDIR", s.TempDir); err != nil {
 		return err
+	}
+
+	if filesizeLimitStr := os.Getenv("WASM_FILE_SIZE_LIMIT"); filesizeLimitStr != "" {
+		filesizeLimit, err := strconv.ParseInt(filesizeLimitStr, 10, 64)
+		if err != nil {
+			return err
+		}
+		s.FilesizeLimit = filesizeLimit
 	}
 
 	switch s.Typ {
